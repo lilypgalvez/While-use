@@ -1,0 +1,22 @@
+float R = 0;
+float G = 0;
+float B = 0;
+float y = 0;
+int Lily = 0;
+
+void setup(){
+ size(500,500);
+}
+
+void draw(){
+while(y < 20){
+   for(int x=0 ; x < 20 ; x++){
+   R = x*1+ y*30;
+   G = x*10+ (y)*3;
+   B = 20*x+25 + y*3;
+   fill(R , G , B);
+   rect(x*25 , y*25 , 25 , 25);
+  }
+  y = y + 1;
+}
+}
